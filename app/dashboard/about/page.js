@@ -1,0 +1,8 @@
+export default function AboutPage() {
+  return (
+    <div className="max-w-4xl mx-auto">
+      <h1 className="text-2xl font-bold mb-4">About Us</h1>
+      <p className="text-gray-600">This dashboard helps manage the Home Cleaning Booking app — create services, view bookings, and manage users.</p>
+    </div>
+  );
+}
