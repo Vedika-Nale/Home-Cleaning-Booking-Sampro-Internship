@@ -3,7 +3,7 @@ export default function DashboardLayout({ children }) {
     /* 1. THE OUTERMOST WRAPPER NOW HOLDS THE IMAGE */
     <div 
       className="flex min-h-screen bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('https://i.pinimg.com/1200x/45/0e/b6/450eb6cd5b7561f71391f9d5eef7daa2.jpg')" }}
+      style={{ backgroundImage: "url('https://i.pinimg.com/736x/be/bc/a6/bebca64c84536b6b4cebc1b0954bb0dc.jpg')" }}
     >
       
       {/* 2. SIDEBAR WITH GLASS EFFECT */}
