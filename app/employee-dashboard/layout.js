@@ -9,7 +9,7 @@ export const metadata = {
 export default function EmployeeDashboardLayout({ children }) {
     return (
         <RequireAuth>
-            <div className="flex min-h-screen bg-gray-50 dark:bg-[#060606]">
+            <div className="flex min-h-screen bg-gray-50 dark:bg-white">
                 <EmployeeNav />
                 <main className="flex-1 p-8 overflow-y-auto h-screen">
                     {children}

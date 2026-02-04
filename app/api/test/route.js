@@ -1,24 +1,22 @@
-import clientPromise from "@/app/lib/mongodb";
+import clientPromise from "@/app/Lib/mongodb";
 import { NextResponse } from "next/server";
 
-export async function GET() {
+export async function POST(request) {
   try {
+    const { name, email, password } = await request.json();
     const client = await clientPromise;
-    const db = client.db("HomeCleaningDB");
+    const db = client.db("HomeCleaningDB"); // This creates the DB on the fly!
 
-    // This command asks MongoDB for its status
-    await db.command({ ping: 1 });
-
-    return NextResponse.json({ 
-      status: "Connected!", 
-      database: "HomeCleaningDB" 
+    const result = await db.collection("users").insertOne({
+      name,
+      email,
+      password, // Reminder: Hash this for real projects!
+      createdAt: new Date(),
     });
+
+    return NextResponse.json({ success: true, id: result.insertedId });
   } catch (e) {
-    console.error(e);
-    return NextResponse.json({ 
-      status: "Error", 
-      message: e.message 
-    }, { status: 500 });
+    return NextResponse.json({ error: e.message }, { status: 500 });
   }
 }
 
