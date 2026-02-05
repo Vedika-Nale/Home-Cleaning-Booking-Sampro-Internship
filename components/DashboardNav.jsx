@@ -12,23 +12,24 @@ export default function DashboardNav() {
   }
 
   return (
-    <aside className="w-64 bg-[#081007] text-white border-r border-gray-200 dark:border-white/5 p-6">
+    <aside className="w-64 bg-[#006400] text-white border-r border-green-700 dark:border-green-800 p-6 h-screen sticky top-0">
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-white">Dashboard</h2>
-        <p className="text-sm text-gray-300">Home Cleaning Admin</p>
+        <h2 className="text-2xl font-bold text-yellow-400">Dashboard</h2>
+        <p className="text-sm text-green-100">Home Cleaning Admin</p>
       </div>
 
       <nav className="flex flex-col gap-2">
-        <Link href="/dashboard/home" className="px-3 py-2 rounded hover:bg-gray-700 !text-white">Home</Link>
-        <Link href="/dashboard/about" className="px-3 py-2 rounded hover:bg-gray-700 !text-white">About Us</Link>
-        <Link href="/dashboard/bookings" className="px-3 py-2 rounded hover:bg-gray-700 !text-white">Bookings</Link>
-        <Link href="/dashboard/services" className="px-3 py-2 rounded hover:bg-gray-700 !text-white">Book Services</Link>
-        <Link href="/dashboard/profile" className="px-3 py-2 rounded hover:bg-gray-700 !text-white">Profile</Link>
+        <Link href="/dashboard/home" className="px-3 py-2 rounded hover:bg-green-700 hover:text-yellow-300 !text-white transition-colors">Home</Link>
+        <Link href="/dashboard/bookings" className="px-3 py-2 rounded hover:bg-green-700 hover:text-yellow-300 !text-white transition-colors">Bookings</Link>
+        <Link href="/dashboard/services" className="px-3 py-2 rounded hover:bg-green-700 hover:text-yellow-300 !text-white transition-colors">Services</Link>
+        <Link href="/dashboard/profile" className="px-3 py-2 rounded hover:bg-green-700 hover:text-yellow-300 !text-white transition-colors">Profile</Link>
 
-        <button onClick={handleLogout} className="mt-6 px-3 py-2 rounded bg-red-500 text-white hover:bg-red-600">Logout</button>
+        <button onClick={handleLogout} className="mt-6 px-3 py-2 rounded bg-yellow-500 text-green-900 font-bold hover:bg-yellow-400 transition-colors text-left">Logout</button>
       </nav>
 
-      <p className="text-xs text-gray-400 mt-6">Tip: manage services and bookings here.</p>
+      <div className="mt-auto pt-6 border-t border-green-700">
+        <p className="text-xs text-green-200">Admin Panel</p>
+      </div>
     </aside>
   );
 }

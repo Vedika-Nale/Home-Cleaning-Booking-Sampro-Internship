@@ -16,7 +16,7 @@ export default function EmployeeDashboardHome() {
 
     return (
         <div>
-            <h1 className="text-3xl font-bold mb-6 text-green-800 dark:text-green-400">Welcome Back, Employee!</h1>
+            <h1 className="text-3xl font-bold mb-6 text-green-800 dark:text-green-700">Welcome Back, Rahul!</h1>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                 {stats.map((stat, index) => (
@@ -34,14 +34,14 @@ export default function EmployeeDashboardHome() {
 
             <div className="bg-white dark:bg-white rounded-lg shadow-md border border-gray-100 dark:border-gray-200 p-6">
                 <div className="flex justify-between items-center mb-6">
-                    <h2 className="text-xl font-bold text-green-800 dark:text-green-400">Today's Schedule</h2>
+                    <h2 className="text-xl font-bold text-green-800 dark:text-green-700">Today's Schedule</h2>
                     <Link href="/employee-dashboard/schedule" className="text-yellow-600 hover:text-yellow-700 hover:underline text-sm font-semibold">View Full Schedule</Link>
                 </div>
 
                 <div className="overflow-x-auto">
                     <table className="w-full text-left">
                         <thead>
-                            <tr className="border-b-2 border-green-100 dark:border-green-900 text-green-800 dark:text-green-400 text-sm font-semibold">
+                            <tr className="border-b-2 border-green-100 dark:border-green-900 text-green-800 dark:text-green-700 text-sm font-semibold">
                                 <th className="pb-3 pl-2">Time</th>
                                 <th className="pb-3">Customer</th>
                                 <th className="pb-3">Address</th>

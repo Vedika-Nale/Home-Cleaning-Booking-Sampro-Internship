@@ -13,7 +13,7 @@ export default function EmployeeSchedule() {
 
     return (
         <div>
-            <div className="flex justify-between items-center mb-6">
+            <div className="flex justify-between items-center mb-6 pr-24">
                 <h1 className="text-3xl font-bold text-green-800">My Schedule</h1>
                 <input
                     type="date"

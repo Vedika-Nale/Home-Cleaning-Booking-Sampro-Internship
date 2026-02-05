@@ -4,8 +4,8 @@ import { useState } from "react";
 
 export default function EmployeeProfile() {
     const [profile, setProfile] = useState({
-        name: "Rajesh Kumar",
-        email: "rajesh.kumar@example.com",
+        name: "Rahul Patil",
+        email: "rahulpatil@gmail.com",
         phone: "+91 98765 43210",
         address: "B-201, Shanti Nagar, Andheri East, Mumbai",
         specialization: "Deep Cleaning, Carpet Cleaning",

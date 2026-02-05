@@ -7,7 +7,7 @@ export default function Register() {
   return (
     <main 
       className="flex min-h-screen items-center justify-center bg-cover bg-center p-4 md:p-10"
-      style={{ backgroundImage: "url('https://i.pinimg.com/1200x/ca/66/18/ca6618c63565fd61cb0b41570302457a.jpg')" }}
+      style={{ backgroundImage: "url('https://i.pinimg.com/1200x/77/e5/7e/77e57e5a09caf5d188cfbf02502154c6.jpg')" }}
     >
       {/* Main Container */}
       <div className="flex flex-col md:flex-row w-full max-w-5xl min-h-600px rounded-3xl overflow-hidden shadow-2xl">
