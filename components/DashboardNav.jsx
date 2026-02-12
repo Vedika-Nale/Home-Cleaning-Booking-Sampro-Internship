@@ -20,8 +20,8 @@ export default function DashboardNav() {
 
       <nav className="flex flex-col gap-2">
         <Link href="/dashboard/home" className="px-3 py-2 rounded hover:bg-green-700 hover:text-yellow-300 !text-white transition-colors">Home</Link>
-        <Link href="/dashboard/bookings" className="px-3 py-2 rounded hover:bg-green-700 hover:text-yellow-300 !text-white transition-colors">Bookings</Link>
-        <Link href="/dashboard/services" className="px-3 py-2 rounded hover:bg-green-700 hover:text-yellow-300 !text-white transition-colors">Services</Link>
+        <Link href="/dashboard/bookings" className="px-3 py-2 rounded hover:bg-green-700 hover:text-yellow-300 !text-white transition-colors">Previous Bookings</Link>
+        <Link href="/dashboard/services" className="px-3 py-2 rounded hover:bg-green-700 hover:text-yellow-300 !text-white transition-colors">Book Service</Link>
         <Link href="/dashboard/profile" className="px-3 py-2 rounded hover:bg-green-700 hover:text-yellow-300 !text-white transition-colors">Profile</Link>
 
         <button onClick={handleLogout} className="mt-6 px-3 py-2 rounded bg-yellow-500 text-green-900 font-bold hover:bg-yellow-400 transition-colors text-left">Logout</button>

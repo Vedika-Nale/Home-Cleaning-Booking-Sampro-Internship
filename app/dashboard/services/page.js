@@ -8,6 +8,9 @@ const AVAILABLE_SERVICES = [
   "Carpet Cleaning",
   "In-Out Cleaning",
   "Mini Services",
+  "Kitchen Deep Clean",
+  "Bathroom Cleaning",
+  "Sofa Cleaning",
 ];
 
 export default function ServicesPage() {

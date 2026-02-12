@@ -11,7 +11,7 @@ export default function EmployeeDashboardHome() {
 
     const upcomingTasks = [
         { id: 1, customer: "Amit Sharma", time: "10:00 AM", status: "Pending", address: "Flat 4, Koregaon Park, Pune" },
-        { id: 2, customer: "Priya Patel", time: "2:00 PM", status: "Confirmed", address: "102, Bandra West, Mumbai" },
+        { id: 2, customer: "Priya Patel", time: "2:00 PM", status: "Confirmed", address: "102, Kalyani Nagar, Pune" },
     ];
 
     return (

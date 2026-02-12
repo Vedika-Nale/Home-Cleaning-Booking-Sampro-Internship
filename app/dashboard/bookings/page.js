@@ -6,11 +6,12 @@ export default function BookingsPage() {
   const [filter, setFilter] = useState("All");
 
   const bookings = [
-    { id: 1, customer: "Amit Sharma", service: "Deep Cleaning (Full Home)", date: "04 Feb 2026", time: "10:00 AM", amount: 4999, status: "Completed", address: "Flat 4, Koregaon Park, Pune" },
-    { id: 2, customer: "Priya Patel", service: "Kitchen Deep Clean", date: "04 Feb 2026", time: "02:00 PM", amount: 1499, status: "Pending", address: "102, Bandra West, Mumbai" },
-    { id: 3, customer: "Rajesh Gaikwad", service: "Sofa Cleaning", date: "05 Feb 2026", time: "11:00 AM", amount: 1299, status: "Confirmed", address: "Sector 17, Vashi, Navi Mumbai" },
-    { id: 4, customer: "Suresh Iyer", service: "Bathroom Cleaning", date: "06 Feb 2026", time: "09:00 AM", amount: 899, status: "Cancelled", address: "A-504, Hinjewadi, Pune" },
-    { id: 5, customer: "Neha Gupta", service: "Deep Cleaning (Full Home)", date: "06 Feb 2026", time: "04:00 PM", amount: 4999, status: "Confirmed", address: "Plot 22, Kothrud, Pune" },
+    { id: 1, customer: "Amit Sharma", service: "Deep Cleaning (Full Home)", date: "04 Feb 2026", time: "10:00 AM", amount: 2999, status: "Completed", address: "Flat 4, Koregaon Park, Pune" },
+    { id: 2, customer: "Priya Patel", service: "Kitchen Deep Clean", date: "15 Feb 2026", time: "02:00 PM", amount: 1499, status: "Pending", address: "102, Kothrud, Pune" },
+    { id: 3, customer: "Rajesh Gaikwad", service: "Sofa Cleaning", date: "13Feb 2026", time: "11:00 AM", amount: 800, status: "Confirmed", address: "Sector 17, Navi Peth, Pune" },
+    { id: 4, customer: "Sneha Gupta", service: "Move-out Cleaning", date: "06 Feb 2026", time: "09:00 AM", amount: 3999, status: "Cancelled", address: "Plot 45, Shivaji Nagar, Pune" },
+    { id: 5, customer: "Rahul Verma", service: "Carpet Cleaning", date: "07 Feb 2026", time: "03:00 PM", amount: 800, status: "Completed", address: "Flat 12, Kalyani Nagar, Pune" },
+    { id: 6, customer: "Anjali Mehta", service: "Mini Services", date: "08 Feb 2026", time: "01:00 PM", amount: 899, status: "Completed", address: "Flat 15, Viman Nagar, Pune" },
   ];
 
   const filteredBookings = filter === "All" ? bookings : bookings.filter(b => b.status === filter);
@@ -20,7 +21,7 @@ export default function BookingsPage() {
       <div className="flex justify-between items-center mb-6">
         <div>
           <h1 className="text-2xl font-bold text-green-800 dark:text-green-700">Bookings</h1>
-          <p className="text-gray-600">Total {bookings.length} bookings found</p>
+          <p className="text-gray-600">Previous {bookings.length} bookings found</p>
         </div>
 
         <div className="flex gap-2">
@@ -40,7 +41,7 @@ export default function BookingsPage() {
         <table className="w-full text-left">
           <thead className="bg-green-50 border-b border-green-100">
             <tr>
-              <th className="p-4 font-semibold text-green-900">Customer</th>
+              <th className="p-4 font-semibold text-green-900">Name</th>
               <th className="p-4 font-semibold text-green-900">Service</th>
               <th className="p-4 font-semibold text-green-900">Date & Time</th>
               <th className="p-4 font-semibold text-green-900">Address</th>

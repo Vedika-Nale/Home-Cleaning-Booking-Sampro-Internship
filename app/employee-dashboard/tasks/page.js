@@ -1,9 +1,9 @@
 export default function EmployeeTasks() {
     const allTasks = [
         { id: 1, date: "2026-02-04", time: "10:00 AM", customer: "Amit Sharma", service: "Deep Cleaning", status: "Pending", address: "Flat 4, Koregaon Park, Pune" },
-        { id: 2, date: "2026-02-04", time: "2:00 PM", customer: "Priya Patel", service: "Standard Cleaning", status: "Confirmed", address: "102, Bandra West, Mumbai" },
-        { id: 3, date: "2026-02-05", time: "9:00 AM", customer: "Rahul Verma", service: "Deep Cleaning", status: "Completed", address: "Row House 7, Nashik Road, Nashik" },
-        { id: 4, date: "2026-02-06", time: "11:00 AM", customer: "Sneha Gupta", service: "Move-out Cleaning", status: "Cancelled", address: "Plot 45, Shivaji Nagar, Nagpur" },
+        { id: 2, date: "2026-02-04", time: "2:00 PM", customer: "Priya Patel", service: "Standard Cleaning", status: "Confirmed", address: "102, Kalyani Nagar, Pune" },
+        { id: 3, date: "2026-02-05", time: "9:00 AM", customer: "Rahul Verma", service: "Deep Cleaning", status: "Completed", address: "Row House 7, Kothrud, Pune" },
+        { id: 4, date: "2026-02-06", time: "11:00 AM", customer: "Sneha Gupta", service: "Move-out Cleaning", status: "Cancelled", address: "Plot 45, Shivaji Nagar, Pune" },
     ];
 
     return (

@@ -18,17 +18,17 @@ export default function DashboardHome() {
 
   // 2. Sample data for your services (Indian Pricing)
   const services = [
-    { id: 1, name: "Deep Cleaning (Full Home)", duration: "6 Hours", price: 4999 },
+    { id: 1, name: "Deep Cleaning (Full Home)", duration: "6 Hours", price: 2999 },
     { id: 2, name: "Kitchen Deep Clean", duration: "3 Hours", price: 1499 },
-    { id: 3, name: "Bathroom Cleaning", duration: "1.5 Hours", price: 899 },
-    { id: 4, name: "Sofa Cleaning (5 Seater)", duration: "2 Hours", price: 1299 },
+    { id: 3, name: "Bathroom Cleaning", duration: "1.5 Hours", price: 800 },
+    { id: 4, name: "Sofa Cleaning (5 Seater)", duration: "2 Hours", price: 800 },
   ];
 
   // 3. Recent Activity Mock Data
   const recentBookings = [
-    { id: 101, customer: "Amit Sharma", service: "Deep Cleaning", amount: 4999, status: "Completed", date: "04 Feb" },
+    { id: 101, customer: "Amit Sharma", service: "Deep Cleaning", amount: 2999, status: "Completed", date: "04 Feb" },
     { id: 102, customer: "Priya Patel", service: "Kitchen Clean", amount: 1499, status: "Pending", date: "04 Feb" },
-    { id: 103, customer: "Rajesh Gaikwad", service: "Sofa Cleaning", amount: 1299, status: "Confirmed", date: "05 Feb" },
+    { id: 103, customer: "Rajesh Gaikwad", service: "Sofa Cleaning", amount: 800, status: "Confirmed", date: "05 Feb" },
   ];
 
   return (
@@ -50,12 +50,12 @@ export default function DashboardHome() {
         </div>
         <div className="p-6 bg-white dark:bg-white border-l-4 border-blue-500 rounded-lg shadow-md">
           <p className="text-sm text-gray-500 uppercase font-bold tracking-wider">Active Bookings</p>
-          <span className="text-3xl font-bold text-gray-800">12</span>
+          <span className="text-3xl font-bold text-gray-800">6</span>
           <p className="text-xs text-gray-500 mt-1">3 pending confirmation</p>
         </div>
         <div className="p-6 bg-white dark:bg-white border-l-4 border-purple-500 rounded-lg shadow-md">
           <p className="text-sm text-gray-500 uppercase font-bold tracking-wider">Total Customers</p>
-          <span className="text-3xl font-bold text-gray-800">156</span>
+          <span className="text-3xl font-bold text-gray-800">200</span>
           <p className="text-xs text-green-600 mt-1">+5 new this week</p>
         </div>
         <div className="p-6 bg-white dark:bg-white border-l-4 border-yellow-500 rounded-lg shadow-md">

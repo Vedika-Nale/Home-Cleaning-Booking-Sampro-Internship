@@ -8,7 +8,7 @@ export default function EmployeeSchedule() {
     const scheduleItems = [
         { id: 1, time: "10:00 AM - 12:00 PM", title: "Deep Cleaning - Amit Sharma", type: "work", address: "Flat 4, Koregaon Park, Pune, Maharashtra, India" },
         { id: 2, time: "12:00 PM - 1:00 PM", title: "Lunch Break", type: "break" },
-        { id: 3, time: "2:00 PM - 4:00 PM", title: "Standard Cleaning - Priya Patel", type: "work", address: "102, Bandra West, Mumbai, Maharashtra, India" },
+        { id: 3, time: "2:00 PM - 4:00 PM", title: "Standard Cleaning - Priya Patel", type: "work", address: "102, Kalyani Nagar, Pune, Maharashtra, India" },
     ];
 
     return (
