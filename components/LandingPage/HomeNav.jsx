@@ -25,7 +25,7 @@ export default function HomeNav() {
                                         height={50}
                                         className="rounded-md"
                                     />
-                                    <span className="text-2xl font-bold text-green-600">CleanIT</span>
+                                    <span className="text-xl font-extrabold bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent tracking-tight">CleanIT</span>
                                 </div>
                             </Link>
                         </div>

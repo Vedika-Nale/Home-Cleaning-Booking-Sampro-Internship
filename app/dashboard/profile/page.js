@@ -16,6 +16,22 @@ export default function ProfilePage() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   }
 
+  const handleSave = () => {
+    const userData = localStorage.getItem("user");
+    let userObj = {};
+    if (userData) {
+      try {
+        userObj = JSON.parse(userData);
+      } catch (e) {
+        userObj = {};
+      }
+    }
+    userObj.username = formData.fullName;
+    localStorage.setItem("user", JSON.stringify(userObj));
+    window.dispatchEvent(new Event("userUpdate"));
+    alert("Admin Profile updated successfully!");
+  };
+
   return (
     <div className="max-w-4xl mx-auto">
       <h1 className="text-2xl font-bold mb-2 text-green-800 dark:text-green-700">Admin Profile</h1>
@@ -24,7 +40,7 @@ export default function ProfilePage() {
       <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100">
         <div className="flex items-center gap-6 mb-8">
           <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center text-green-700 text-3xl font-bold">
-            AD
+            {formData.fullName.slice(0, 2).toUpperCase() || "AD"}
           </div>
           <div>
             <h2 className="text-xl font-bold text-gray-800">{formData.fullName}</h2>
@@ -33,7 +49,7 @@ export default function ProfilePage() {
           </div>
         </div>
 
-        <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <form className="grid grid-cols-1 md:grid-cols-2 gap-6" onSubmit={(e) => e.preventDefault()}>
           <div>
             <label className="block text-sm font-semibold text-gray-700 mb-1">Full Name</label>
             <input type="text" name="fullName" value={formData.fullName} onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-gray-800" />
@@ -66,7 +82,13 @@ export default function ProfilePage() {
 
           <div className="md:col-span-2 mt-4 pt-4 border-t border-gray-100 flex justify-end gap-3">
             <button type="button" className="px-6 py-2 border border-gray-300 rounded-lg text-gray-600 font-medium hover:bg-gray-50">Cancel</button>
-            <button type="button" className="px-6 py-2 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 shadow-md">Save Changes</button>
+            <button
+              type="button"
+              onClick={handleSave}
+              className="px-6 py-2 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 shadow-md transition-all active:scale-95"
+            >
+              Save Changes
+            </button>
           </div>
         </form>
       </div>
